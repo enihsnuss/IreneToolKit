@@ -1,0 +1,16 @@
+# application.properties的优先级会比application.yml高
+# 引入的spring-boot-starter-web依赖间接地引入了snakeyaml依赖，snakeyaml会实现对YAML配置的解析
+# Yaml利用缩进来表示层级关系，大小写敏感
+
+server:
+  port: 8081
+  tomcat:
+    uri-encoding: utf-8
+
+
+
+
+
+pet:
+  name: mimi
+
